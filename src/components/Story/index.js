@@ -30,6 +30,7 @@ const Story = ({ story }) => {
             switch(thumbnail) {
               case 'self':
               case 'nsfw':
+              case '':
                 return selfThumbnail;
               case 'default':
                 return defaultThumbnail;
