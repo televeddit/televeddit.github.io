@@ -1,0 +1,18 @@
+export default {
+  "MadMen": 385,
+  "GameOfThrones": 82,
+  "TheLastAirbender": 555,
+  "Futurama": 538,
+  "PandR": 174,
+  "DunderMifflin": 526,
+  "HouseOfCards": 175,
+  "BreakingBad": 169,
+  "Community": 318,
+  "BobsBurgers": 107,
+  "OrangeIsTheNewBlack": 170,
+  "BrooklynNineNine": 49,
+  "LegendOfKorra": 178,
+  "MrRobot": 1871,
+  "NewGirl": 58,
+  "JaneTheVirginCW": 128,
+};

@@ -1,0 +1,27 @@
+input {
+  border: 1px solid gray;
+  font-family: verdana;
+  width: 300px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size: 13px;
+  padding: 6px;
+  padding-right: 25px;
+  padding-left: 9px;
+  vertical-align: middle;
+}
+
+.autocompleteRow {
+  font-size: 13px;
+  padding: 6px;
+  padding-right: 25px;
+  padding-left: 9px;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: white;
+}
+
+.autocompleteActiveRow {
+  background-color: lightgray;
+}
