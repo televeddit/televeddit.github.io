@@ -3,6 +3,7 @@
   float: right;
   margin-right: 5px;
   position: relative;
+  margin-bottom: 45px;
 
   & > * {
     margin-top: 10px;
@@ -56,4 +57,10 @@ input {
       background-color: lightgray;
     }
   }
+}
+
+.addSubredditText {
+  margin-top: 4px;
+  font-size: x-small;
+  padding: 0 4px;
 }

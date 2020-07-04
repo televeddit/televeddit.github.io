@@ -11,6 +11,7 @@ const Stories = ({ episodeId }) => {
 
   useEffect(() => {
     fetchData();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [episodeId]);
 
   const fetchData = async () => {
@@ -24,7 +25,7 @@ const Stories = ({ episodeId }) => {
           setEpisodeData(respEpisodeData);
           const {
             airstamp,
-            ["_embedded"]: embedded,
+            "_embedded": embedded,
           } = respEpisodeData;
           if (Object.values(ShowMapping).includes(embedded.show.id)) {
             const subreddit = Object.keys(ShowMapping).find(key => ShowMapping[key] === embedded.show.id);
@@ -55,7 +56,7 @@ const Stories = ({ episodeId }) => {
           <div className={stylesheet.episodeOverviewContainer}>
             <div className={stylesheet.episodeOverview}>
               <div className={stylesheet.episodeImg}>
-                <img style={{width: "250px"}} src={episodeData.image.medium} />
+                <img style={{width: "250px"}} src={episodeData.image.medium} alt={`${episodeData["_embedded"].show.name} poster`} />
               </div>
               <div className={stylesheet.episodeDetails}>
                 <p className={stylesheet.showName}>{episodeData["_embedded"].show.name} &middot; <a href={`https://reddit.com/r/${subreddit}`}>/r/{subreddit}</a></p>

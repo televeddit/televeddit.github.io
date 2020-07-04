@@ -11,6 +11,7 @@ const Episodes = ({ showId }) => {
 
   useEffect(() => {
     fetchData();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showId]);
 
   const fetchData = async () => {
@@ -39,7 +40,7 @@ const Episodes = ({ showId }) => {
     }
   };
 
-  const subreddit = Object.keys(ShowMapping).find(key => ShowMapping[key] == showId);
+  const subreddit = Object.keys(ShowMapping).find(key => ShowMapping[key] === parseInt(showId, 10));
 
   return (
     <div className={stylesheet.storiesMain}>
@@ -47,7 +48,7 @@ const Episodes = ({ showId }) => {
         <React.Fragment>
           <div className={stylesheet.showOverview}>
             <div className={stylesheet.showImg}>
-              <img style={{maxWidth: "150px"}} src={showData.image.medium} />
+              <img style={{maxWidth: "150px"}} src={showData.image.medium} alt={`${showData.name} poster`} />
             </div>
             <div className={stylesheet.showDetails}>
               <h2 className={stylesheet.subredditName}>{showData.name}</h2>
@@ -63,8 +64,6 @@ const Episodes = ({ showId }) => {
                 season,
                 airstamp,
                 number,
-                image,
-                summary,
               } = episode;
               const wasBeforeRedditFounding = (new Date("06/25/2005")) > (new Date(airstamp));
               if (wasBeforeRedditFounding) {

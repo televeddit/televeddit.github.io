@@ -16,6 +16,7 @@ const Sidebar = () => {
           );
         })}
       </div>
+      <p className={stylesheet.addSubredditText}>Don't see the show you're watching? Even after searching? <a href="https://github.com/bobbylcraig/cineddit/issues/new?assignees=bobbylcraig&labels=Add+Subreddit&template=subreddit-request.md&title=Add+new+subreddit">Add or request it here.</a></p>
     </aside>
   );
 }

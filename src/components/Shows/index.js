@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import stylesheet from './Shows.module.scss';
 import ShowMapping from '../../data/ShowMapping';
 
@@ -52,9 +52,9 @@ const Shows = () => {
       <div className={stylesheet.posterList}>
         {posters.map((poster) => {
           return (
-            <div className={stylesheet.poster}>
+            <div key={poster.subreddit} className={stylesheet.poster}>
               <a href={`/shows/${ShowMapping[poster.subreddit]}`}>
-                <img src={poster.img} />
+                <img src={poster.img} alt={`${poster.name} poster`} />
               </a>
               <h3 style={{marginBottom: "0.5em"}}>{poster.name}</h3>
               <h4 style={{marginTop: "0", fontSize: "small"}}>

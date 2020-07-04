@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Televeddit
 
-## Available Scripts
+Televeddit is a site I hacked together in a day (expect resultant code quality). I ran into an issue where I'd be watching a TV show years after all my friends had finished it (first with Mad Men in Fall of 2019), I'd hop onto the subreddit, and I couldn't participate because of all the spoilers. My friends didn't want to talk about the shows, or couldn't without divulging secrets, so I decided to see what Reddit had to say when they were in my position (with no future knowledge).
 
-In the project directory, you can run:
+Televeddit shows you Reddit posts from the airtime of an episode through a complete week following this.
 
-### `npm start`
+This PR uses APIs from [TV Maze](https://www.tvmaze.com/api) and [Pushshift](https://pushshift.io/api-parameters/). Please consider donating to those orgs if you actually use this (or even if you don't!). I've done some session storage in this app to prevent over-pinging the APIs as much as possible (and for speed purposes).
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Cases in which this probably isn't useful:
+- You're watching an old show (probably won't help with your West Wing reruns). Try something that had an active subreddit through the airing of the show.
+- You're watching something that comes from a streaming service. e.g. House of Cards drops entire seasons at a time, so it probably won't be helpful unless you check the last episode of each season... which could be reasonable?
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### How to run locally
+It should be fairly simple. This was all created with create React app and is fairly light-weight. Clone this repo and do the following...
 
-### `npm test`
+1. `cd` into the repo directory
+2. Run `npm install`
+3. Run `npm start`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+It should be that simple!
 
-### `npm run build`
+### Adding a subreddit
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I've become aware of the fact that if I make this available to others, there's the possibility that I might need to update it with the shows _they're_ interested in. You can request an addition [here](https://github.com/bobbylcraig/cineddit/issues/new?assignees=bobbylcraig&labels=Add+Subreddit&template=subreddit-request.md&title=Add+new+subreddit) or open a PR yourself if you're feeling kind. The process should be pretty simple with a one-line diff in `src/data/ShowMapping.js`. The ID that's the value is the ID from [TV Maze](https://www.tvmaze.com/).
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Note: multiple subreddits _can_ map to the same TV show. I know there are several subreddits for some TV shows.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Contributing
 
-### `npm run eject`
+Can you think of a feature that's not included that you would like to be? Please open a PR by all means! Have design ideas? I could use those too as that's definitely not my forte 😅
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Lastly, if you've got accessibility feedback, I'd love it. I hacked this together relatively quickly and am sad to say that responsive design and accessibility weren't my first thoughts. I'm happy to correct issues (or review corrections) though!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Todo
+- [ ] Change React Autocomplete to React Autosuggest
+- [ ] Add some GA tracking so I can see what the heck is going on
+- [ ] Cleanup your garbage code :)
+- [ ] Add images and descriptions for social sharing

@@ -26,7 +26,7 @@ const Story = ({ story }) => {
       <span className={stylesheet.score}>{score}</span>
       <span className={stylesheet.thumbnailContainer}>
         <a href={fullLink}>
-          <img src={(() => {
+          <img alt={`${title} thumbnail`} src={(() => {
             switch(thumbnail) {
               case 'self':
               case 'nsfw':
