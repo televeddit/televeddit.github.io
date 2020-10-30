@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4a473b73.chunk.css",
+    "main.js": "/static/js/main.9501eef7.chunk.js",
+    "main.js.map": "/static/js/main.9501eef7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ae37d96f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ae37d96f.js.map",
+    "static/js/2.c3458e3c.chunk.js": "/static/js/2.c3458e3c.chunk.js",
+    "static/js/2.c3458e3c.chunk.js.map": "/static/js/2.c3458e3c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.42a1936f4dbfb8764e6a0d15daa52ea3.js": "/precache-manifest.42a1936f4dbfb8764e6a0d15daa52ea3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.4a473b73.chunk.css.map": "/static/css/main.4a473b73.chunk.css.map",
+    "static/js/2.c3458e3c.chunk.js.LICENSE.txt": "/static/js/2.c3458e3c.chunk.js.LICENSE.txt",
+    "static/media/avatar-poster.jpg": "/static/media/avatar-poster.6341c93e.jpg",
+    "static/media/breaking-bad-poster.jpg": "/static/media/breaking-bad-poster.22409073.jpg",
+    "static/media/brooklyn-nine-nine-poster.jpg": "/static/media/brooklyn-nine-nine-poster.4fa8bf7d.jpg",
+    "static/media/futurama-poster.jpg": "/static/media/futurama-poster.28df4692.jpg",
+    "static/media/mad-men-poster.jpg": "/static/media/mad-men-poster.f92a03a6.jpg",
+    "static/media/parks-and-rec-poster.jpg": "/static/media/parks-and-rec-poster.0223e28a.jpg",
+    "static/media/televeddit-wordmark.png": "/static/media/televeddit-wordmark.2e7a7705.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae37d96f.js",
+    "static/js/2.c3458e3c.chunk.js",
+    "static/css/main.4a473b73.chunk.css",
+    "static/js/main.9501eef7.chunk.js"
+  ]
+}
