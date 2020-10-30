@@ -1,0 +1,36 @@
+.headerMain {
+  background-color: #cee3f8;
+  border-bottom: 1px solid #5f99cf;
+}
+
+.logo {
+  margin: 0 8px;
+}
+
+.tabMenu {
+  list-style-type: none;
+  white-space: nowrap;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: -1px;
+  vertical-align: bottom;
+  padding: 0;
+
+  li {
+    float: left;
+    padding: 2px 6px 0 6px;
+    background-color: #eff7ff;
+    margin-right: 4px;
+    text-decoration: none;
+    color: #369;
+    font-weight: bold;
+    font-size: 0.9em;
+
+    &.selected {
+      color: orangered;
+      background-color: white;
+      border: 1px solid #5f99cf;
+      border-bottom: 1px solid white;
+    }
+  }
+}

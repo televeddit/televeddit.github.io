@@ -1,0 +1,20 @@
+.footerMain {
+  overflow: hidden;
+  border-top: 1px solid black;
+  padding: 10px 25px;
+  margin-top: 25px;
+  clear: both;
+}
+
+.addSubredditNotice {
+  float: left;
+}
+
+.githubLogo {
+  float: right;
+  font-size: larger;
+
+  a {
+    text-decoration: none;
+  }
+}

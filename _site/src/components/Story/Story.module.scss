@@ -1,0 +1,65 @@
+@media only screen and (max-width: 450px) {
+  .thumbnailContainer {
+    display: none;
+  }
+}
+
+.storyContainer {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.score {
+  flex: 0 0 75px;
+  text-align: center;
+  align-self: center;
+}
+
+.thumbnailContainer {
+  flex: 0 0 85px;
+  text-align: center;
+  align-self: center;
+
+  img {
+    max-width: 70px;
+    max-height: 70px;
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+.storyDetailsContainer {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & > span {
+    margin-bottom: 2px;
+  }
+}
+
+.title {
+  display: block;
+
+  a:visited {
+    color: #551a8b;
+  }
+}
+
+.postDetails {
+  display: block;
+  color: #888;
+  font-size: x-small;
+}
+
+.postComments {
+  display: block;
+  color: #888;
+  font-weight: bold;
+  padding: 0 1px;
+  font-size: x-small;
+}
