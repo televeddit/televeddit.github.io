@@ -39,4 +39,7 @@ export default {
   "Narcos": 2705,
   "Sherlock": 335,
   "TheMandalorianTV": 38963,
+  "QueensGambit": 41428,
+  "Survivor": 114,
+  "Outlander": 43,
 };
