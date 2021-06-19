@@ -42,4 +42,6 @@ export default {
   "QueensGambit": 41428,
   "Survivor": 114,
   "Outlander": 43,
+  "DowntonAbbey": 251,
+  "TedLasso": 44458,
 };
