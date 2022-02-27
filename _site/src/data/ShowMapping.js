@@ -46,5 +46,5 @@ export default {
   "TedLasso": 44458,
   "DragRace": 1526,
   "Euphoria": 28826,
-  "SuccessionHBO2018": 23470,
+  "SuccessionTV": 23470,
 };
