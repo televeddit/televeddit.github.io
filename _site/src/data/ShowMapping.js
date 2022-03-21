@@ -47,4 +47,5 @@ export default {
   "DragRace": 1526,
   "Euphoria": 28826,
   "SuccessionTV": 23470,
+  "Billions": 3606,
 };
